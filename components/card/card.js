@@ -20,13 +20,6 @@ export function createCharacterCard() {
     <dd class="card__info-description"></dd>
   </dl>
 </div>`;
-  document.querySelector(".card__title").innerHTML = character.results[0].name;
-  document.querySelector('[data-js="statusDescription"]').innerHTML =
-    character.results[0].status;
-  document.querySelector('[data-js="typeDescription"]').innerHTML =
-    character.results[0].type;
-  document.querySelector('[data-js="occurencesDescription"]').innerHTML =
-    character.results[0].occurences;
 
   cardContainerUl.append("createCard");
 }
